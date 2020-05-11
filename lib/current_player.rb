@@ -1,4 +1,4 @@
-=begindef turn_count(board)
+def turn_count(board)
   count=0
   board.each do |element|
     if element=="X"||element=="O"
@@ -7,10 +7,10 @@
   end
   count
 end
-=end
+
 
 def current_player(board)
-  count=turn(board)
+  count=turn_count(board)
   count.odd?"X":"O"
 
 
